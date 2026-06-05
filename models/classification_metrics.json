@@ -1,0 +1,49 @@
+{
+  "task": "classification",
+  "target": "performance_class",
+  "labels": [
+    "At Risk",
+    "Average",
+    "Excellent"
+  ],
+  "best_model": "RandomForestClassifier",
+  "results": {
+    "LogisticRegression": {
+      "metrics": {
+        "Accuracy": 0.4354066985645933,
+        "Precision_macro": 0.43919671051137005,
+        "Recall_macro": 0.4856376290063685,
+        "F1_macro": 0.4311254468117213
+      },
+      "best_params": {
+        "model__C": 3.0
+      }
+    },
+    "RandomForestClassifier": {
+      "metrics": {
+        "Accuracy": 0.5406698564593302,
+        "Precision_macro": 0.4883838383838384,
+        "Recall_macro": 0.49167289605896775,
+        "F1_macro": 0.489642015646244
+      },
+      "best_params": {
+        "model__max_depth": 16,
+        "model__min_samples_leaf": 1,
+        "model__n_estimators": 400
+      }
+    },
+    "XGBClassifier": {
+      "metrics": {
+        "Accuracy": 0.5598086124401914,
+        "Precision_macro": 0.49440421329822254,
+        "Recall_macro": 0.4530419716171503,
+        "F1_macro": 0.4646308187200381
+      },
+      "best_params": {
+        "model__learning_rate": 0.1,
+        "model__max_depth": 7,
+        "model__n_estimators": 200
+      }
+    }
+  }
+}

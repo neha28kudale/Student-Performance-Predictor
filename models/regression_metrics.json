@@ -1,0 +1,40 @@
+{
+  "task": "regression",
+  "target": "G3",
+  "best_model": "XGBRegressor",
+  "results": {
+    "LinearRegression": {
+      "metrics": {
+        "MAE": 2.6050817899562984,
+        "RMSE": 3.6695574079149855,
+        "R2": 0.12904663959632423
+      },
+      "best_params": {}
+    },
+    "RandomForestRegressor": {
+      "metrics": {
+        "MAE": 2.5315063092642336,
+        "RMSE": 3.498138261060807,
+        "R2": 0.20851722519002847
+      },
+      "best_params": {
+        "model__max_depth": null,
+        "model__min_samples_split": 5,
+        "model__n_estimators": 400
+      }
+    },
+    "XGBRegressor": {
+      "metrics": {
+        "MAE": 2.452948570251465,
+        "RMSE": 3.435148371083826,
+        "R2": 0.23676460981369019
+      },
+      "best_params": {
+        "model__learning_rate": 0.05,
+        "model__max_depth": 7,
+        "model__n_estimators": 200,
+        "model__subsample": 0.8
+      }
+    }
+  }
+}
